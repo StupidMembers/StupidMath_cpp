@@ -1,6 +1,6 @@
 #include "stupidmath.h"
 #include "iostream"
-using namespace stupid;
+using namespace stupid_math;
 int main()
 {
     hello();

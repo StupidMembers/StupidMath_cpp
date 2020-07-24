@@ -1,7 +1,7 @@
 #ifndef STUPIDMATH_STUPIDMATH_H
 #define STUPIDMATH_STUPIDMATH_H
 
-namespace stupid
+namespace stupid_math
 {
     void hello();
 
@@ -10,5 +10,7 @@ namespace stupid
     long long nextPrime(long long N);
 
     long long lastPrime(long long N);
+
+    bool* eratosthenes(long long Nmax);
 }
 #endif //STUPIDMATH_STUPIDMATH_H
