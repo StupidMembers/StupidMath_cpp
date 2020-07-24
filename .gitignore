@@ -8,3 +8,4 @@
 
 *.exe
 /.idea/
+/cmake-build-debug/
