@@ -1,5 +1,6 @@
-#include "library.h"
+#include "stupidmath.h"
 #include "iostream"
+using namespace stupid;
 int main()
 {
     hello();

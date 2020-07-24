@@ -3,6 +3,6 @@ project(StupidMath)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_library(StupidMath SHARED library.cpp library.h)
+add_library(StupidMath SHARED stupidmath.cpp stupidmath.h)
 
-add_executable(test test.cpp library.h library.cpp)
+add_executable(test test.cpp stupidmath.h stupidmath.cpp)
