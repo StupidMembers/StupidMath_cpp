@@ -11,8 +11,10 @@ namespace stupid_math
 
     long long lastPrime(long long N);
 
-    bool* eratosthenes(long long Nmax);
+    bool *eratosthenes(long long Nmax);
 
-    long long fibonacci(long long N);
+    unsigned long long fibonacci(unsigned long long N);
+
+    double fast_fibonacci(long long N);
 }
 #endif //STUPIDMATH_STUPID_MATH_H

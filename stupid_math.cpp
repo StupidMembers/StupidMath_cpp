@@ -5,6 +5,8 @@
 
 namespace stupid_math
 {
+    static double sqrt_5 = std::sqrt(5);
+
     void hello()
     {
         std::cout << "Hello, World!" << std::endl;
@@ -142,27 +144,39 @@ namespace stupid_math
         return isPrime;
     }
 
-    long long fibonacci(long long N)
+    // 会溢出
+    unsigned long long fibonacci(unsigned long long N)
     {
-        long long pre = 0;
-        long long now = 1;
-        long long temp;
+        unsigned long long pre = 0;
+        unsigned long long now = 1;
+        unsigned long long temp;
         if (N >= 0)
         {
             if (N == 0)
             {
                 return 0;
             }
-            for (long long i = 2; i <= N; i++)
+            for (unsigned long long i = 2; i <= N; i++)
             {
                 temp = now;
                 now += pre;
                 pre = temp;
+                if (now < pre)
+                {
+                    throw "overflow";
+                }
             }
             return now;
         } else
         {
             throw "number < 0";
         }
+    }
+
+
+    double fast_fibonacci(long long N)
+    {
+
+        return ceil((double)((pow((1 + sqrt_5) / 2, N) - pow((1 - sqrt_5) / 2, N)) / sqrt_5));
     }
 }
