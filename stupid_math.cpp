@@ -142,4 +142,27 @@ namespace stupid_math
         return isPrime;
     }
 
+    long long fibonacci(long long N)
+    {
+        long long pre = 0;
+        long long now = 1;
+        long long temp;
+        if (N >= 0)
+        {
+            if (N == 0)
+            {
+                return 0;
+            }
+            for (long long i = 2; i <= N; i++)
+            {
+                temp = now;
+                now += pre;
+                pre = temp;
+            }
+            return now;
+        } else
+        {
+            throw "number < 0";
+        }
+    }
 }
