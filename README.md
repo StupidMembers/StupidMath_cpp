@@ -1,2 +1,2 @@
 # StupidMath_cpp
-这是Stupid Calator的C++开源数学库
+这是Stupid Calculator的C++开源数学库
