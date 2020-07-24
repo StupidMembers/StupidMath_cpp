@@ -1,4 +1,4 @@
-#include "stupidmath.h"
+#include "stupid_math.h"
 #include "iostream"
 using namespace stupid_math;
 int main()

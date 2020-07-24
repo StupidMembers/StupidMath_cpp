@@ -1,5 +1,5 @@
-#ifndef STUPIDMATH_STUPIDMATH_H
-#define STUPIDMATH_STUPIDMATH_H
+#ifndef STUPIDMATH_STUPID_MATH_H
+#define STUPIDMATH_STUPID_MATH_H
 
 namespace stupid_math
 {
@@ -13,4 +13,4 @@ namespace stupid_math
 
     bool* eratosthenes(long long Nmax);
 }
-#endif //STUPIDMATH_STUPIDMATH_H
+#endif //STUPIDMATH_STUPID_MATH_H

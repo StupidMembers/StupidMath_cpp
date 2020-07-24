@@ -1,4 +1,4 @@
-#include "stupidmath.h"
+#include "stupid_math.h"
 
 #include <iostream>
 #include "cmath"
@@ -111,26 +111,31 @@ namespace stupid_math
         throw "there is no proper number!";
     }
 
-    bool* eratosthenes(long long Nmax) {
-        bool *isPrime = new  bool[Nmax + 1]();
-        for (long long i = 3; i <= Nmax; i += 2) {
+    bool *eratosthenes(long long Nmax)
+    {
+        bool *isPrime = new bool[Nmax + 1]();
+        for (long long i = 3; i <= Nmax; i += 2)
+        {
             isPrime[i] = true;
         }
         isPrime[2] = true;
         long long floor = std::sqrt(Nmax);
-        // cout << isPrime[3];
-        for (long long i = 3; i <= floor; i += 2) {
-            if (isPrime[i]) {
-                long long interval = 2*i;
-                for (long long j = i * i; j <= Nmax; j += interval) {
+        for (long long i = 3; i <= floor; i += 2)
+        {
+            if (isPrime[i])
+            {
+                long long interval = 2 * i;
+                for (long long j = i * i; j <= Nmax; j += interval)
+                {
                     isPrime[j] = false;
                 }
             }
         }
-        // cout << isPrime[3];
         long long num = 0;
-        for (long long i = 1; i <= Nmax; i++) {
-            if (isPrime[i]) {
+        for (long long i = 1; i <= Nmax; i++)
+        {
+            if (isPrime[i])
+            {
                 num++;
             }
         }
