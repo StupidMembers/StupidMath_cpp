@@ -128,3 +128,4 @@ _deps
 
 .idea/
 cmake-build-debug/StupidMath.cbp
+cmake-build-release-mingw/StupidMath.cbp
